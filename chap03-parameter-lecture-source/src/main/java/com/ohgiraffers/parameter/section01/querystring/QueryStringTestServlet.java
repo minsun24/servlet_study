@@ -15,11 +15,11 @@ public class QueryStringTestServlet extends HttpServlet {
     public QueryStringTestServlet() {
         System.out.println("QueryStringTestServlet 기본 생성자 호출!! ");
     }
-    /* 수업목표. 서비스 계층이 하는 일 */
+
+    /* 수업목표. 컨트롤러 계층이 하는 일 */
     /*  설명.  get 요청이 오면 doGet이 실행되고 이때 매개변수로 넘어온 HttpServletRequest에서 꺼낼 수 있다. */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        super.doGet(req, resp);
         String name = req.getParameter("name");
         System.out.println("name = " + name);
 

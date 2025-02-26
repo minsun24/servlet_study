@@ -18,11 +18,8 @@ public class ServiceMethodTestServlet extends HttpServlet {
         System.out.println("기본 생성자 생성");
     }
 
-
-
     @Override
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-//        super.service(req, res);
         System.out.println("req = " + req);
         System.out.println("res = " + res);
 //    req = org.apache.catalina.connector.RequestFacade@41cb7174
@@ -50,29 +47,19 @@ public class ServiceMethodTestServlet extends HttpServlet {
             // 요청 방식: POST
             // POST 요청을 처리할 메소드 실행 중...
         }
-
-        
     }
-
 
 
     /*  필기. GET 방식일 때 호출할 메서드 */
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        super.doGet(req, resp);
         System.out.println("GET 요청을 처리할 메소드 실행 중...");
     }
 
     /*  필기. POST 방식일 때 호출할 메서드 */
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        super.doPost(req, resp);
         System.out.println("POST 요청을 처리할 메소드 실행 중...");
     }
-
-
-
-
-
 
 }
