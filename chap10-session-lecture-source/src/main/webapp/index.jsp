@@ -24,5 +24,7 @@
         </tr>
     </table>
 </form>
+<br>
+<a href="delete">세션 데이터 지우기</a>
 </body>
 </html>
